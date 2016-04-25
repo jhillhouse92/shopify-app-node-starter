@@ -9,7 +9,7 @@ This will install all of the packages specified in package.json. There are webpa
 ## Usage
 
 1. Sign-up for a partner account with Shopify. See the [Shopify API Getting Started Guide](https://docs.shopify.com/api/guides) for more information.
-2. Create a Shopify App with *Embedded App SDK enabled, application url of the APP_DOMAIN, and the Redirection URL of APP_DOMAIN/oauth*. For example, https://myapp.herokuapp.com/ for the APP_DOMAIN and https://myapp.herokuapp.com/oauth for the Redirection URL. The properties can be changed, but just needed to be updated accordingly in the routes.js file.
+2. Create a Shopify App with **Embedded App SDK enabled, application url of the APP_DOMAIN, and the Redirection URL of APP_DOMAIN/oauth**. For example, https://myapp.herokuapp.com/ for the APP_DOMAIN and https://myapp.herokuapp.com/oauth for the Redirection URL. The properties can be changed, but just needed to be updated accordingly in the routes.js file.
 3. Get a Node server and Neo4J server (I developed against and tested for Heroku and Graph Story, a Neo4J Heroku add-on).
 4. Update the server/config/globals.js file with the specified credentials.
 5. Deploy the app to the server.
