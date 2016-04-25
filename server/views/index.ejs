@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.shopify.com/s/assets/external/app.js"></script>
+    <script type="text/javascript" charset="utf-8">
+		ShopifyApp.init({
+			apiKey: "<%- apiKey %>",
+			shopOrigin: "https://<%- shop %>",
+			debug: true
+		});
+        
+        ShopifyApp.ready(function(){
+            ShopifyApp.Bar.loadingOff();
+        });
+    </script>
+</head>
+
+<body>
+    Hello World, You have a Shopify Embedded App!
+</body>
+
+</html>
