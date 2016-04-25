@@ -1,24 +1,24 @@
 {
-  "name": "subscription-billing-app",
+  "name": "shopify-app-node-starter",
   "version": "1.0.0",
-  "description": "This is a subscription billing app that includes cancellation grace periods, down-grading, and integrate with Stripe",
+  "description": "This is a starter project for creating Shopify Apps with a Neo4J database and ES6 Node.JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf build && mkdir build",
-    "build-server": "babel server -d build/server --presets es2015,stage-1 && cp -r server/views/ build/server/views",
+    "build-server": "babel server -d build/server --presets es2015,stage-1 && cp -r server/views/ build/server/views", //this is complex so it can run on heroku
     "build": "npm run clean && npm run build-server",
     "start": "npm run build && node ./build/server/app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gigster-eng/VaVaVoo.git"
+    "url": "git+https://github.com/jhillhouse92/shopify-app-node-starter.git"
   },
   "author": "Joseph Hillhouse",
   "bugs": {
-    "url": "https://github.com/gigster-eng/VaVaVoo/issues"
+    "url": "https://github.com/jhillhouse92/shopify-app-node-starter/issues"
   },
-  "homepage": "https://github.com/gigster-eng/VaVaVoo#readme",
+  "homepage": "https://github.com/jhillhouse92/shopify-app-node-starter#readme",
   "devDependencies": {
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
